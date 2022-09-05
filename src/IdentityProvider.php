@@ -143,7 +143,7 @@ class IdentityProvider
                 echo ' <head>';
                 echo '  <title>SSO Response</title>';
                 echo '  <script>';
-                echo '   document.addEventListener("load", function() { document.getElementById("sso").submit(); })';
+                echo '   window.addEventListener("load", function() { document.getElementById("sso").submit(); })';
                 echo '  </script>';
                 echo ' </head>';
                 echo ' <body>';
