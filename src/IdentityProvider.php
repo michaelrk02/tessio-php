@@ -178,6 +178,7 @@ class IdentityProvider
             'sp' => $request['sp'],
             'redir' => $request['redir'],
             'iat' => $request['iat'],
+            'scope' => $request['scope'],
             'sig' => $request['sig']
         ]));
     }
