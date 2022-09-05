@@ -91,6 +91,7 @@ class IdentityProvider
                 'sp' => $sp,
                 'redir' => $redir,
                 'iat' => $iat,
+                'scope' => $scope,
                 'sig' => $sig
             ];
         }
