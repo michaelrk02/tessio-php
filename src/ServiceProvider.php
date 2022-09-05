@@ -164,6 +164,6 @@ class ServiceProvider
      */
     public function verifyResponse($identityProvider, $serviceProvider, $userId, $issueTime, $scopeToken, $signature)
     {
-        return $signature === hash_hmac('sha256', $identityProvider.$serviceProvider.$userId,$issueTime,$scopeToken, $this->secret);
+        return $signature === hash_hmac('sha256', $identityProvider.$serviceProvider.$userId.$issueTime.$scopeToken, $this->secret);
     }
 }
