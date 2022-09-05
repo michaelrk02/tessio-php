@@ -1,0 +1,8 @@
+/vendor/
+
+/phpdoc
+/.phpdoc/
+
+/docs/*
+!/docs/.gitkeep
+
